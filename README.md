@@ -1,6 +1,6 @@
 <div align="center">
 
-![header](https://capsule-render.vercel.app/api?type=waving&color=0:667eea,100:764ba2&height=180&section=header&text=지연&fontSize=60&fontColor=ffffff&animation=fadeIn)
+안녕하세요김지연입니다잘부탁드립니다만나서반갑습니다열심히하겠습니다
 
 **데이터에서 인사이트를, AI로 해결책을 찾는 개발자 지망생**
 
@@ -13,7 +13,7 @@
 
 - 🌱 Python 기초부터 탄탄하게 다지는 중 (AI는 코드 리뷰어로만, 코드는 직접 작성)
 - 🔭 AI 음성 롤플레이 시뮬레이터, 감정 번역 앱 등 프로젝트 진행 중
-- 🎯 목표: AI 엔지니어 · 데이터 분석가
+- 🎯 목표: AI 엔지니어 / 데이터 분석가
 
 ## 🧠 Interests
 
@@ -40,20 +40,7 @@
 
 | 프로젝트 | 설명 | 기술 |
 |---|---|---|
-| **EXPO** | AI 음성 롤플레이 시뮬레이터 · 4-Fit LLM 평가 파이프라인 | Python, FastAPI, PostgreSQL, Raspberry Pi |
+| **carshering-system** | 자바프로그래밍을 학습하며, 공유 자동차 운영 기업들의 시스템을 가상 구상하여 제작해봤습니다 | Java |
 | **표언** | 감정을 언어로 번역해주는 모바일 앱 (NVC 기반) | *(작성)* |
 | **음성 주문 키오스크** | 라즈베리파이 기반 음성 주문 키오스크 | Raspberry Pi, Python |
 
-## 📊 GitHub Stats
-
-<div align="center">
-
-![stats](https://github-readme-stats.vercel.app/api?username=GITHUB_USERNAME&show_icons=true&theme=default)
-
-![langs](https://github-readme-stats.vercel.app/api/top-langs/?username=GITHUB_USERNAME&layout=compact)
-
-</div>
-
-## 📫 Contact
-
-- ✉️ Email: `your-email@example.com`
