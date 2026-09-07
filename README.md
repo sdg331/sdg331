@@ -1,344 +1,114 @@
 <div align="center">
 
-# Kim Jiyoun
+# 김지연 · Kim Jiyeon
 
-### AI Software Developer · Product Builder · Project Manager
+### AI Software Developer · Product Builder
 
-**문제를 발견하고, 기술로 해결책을 설계하고, 실제 서비스까지 구현합니다.**
+사용자의 문제를 **AI·웹·임베디드 기술**로 해결하고,<br />
+아이디어를 **검증 가능한 제품**으로 구현합니다.
 
-AI · Computer Vision · Web · Embedded System을 활용하여
-아이디어를 실제 동작하는 제품과 서비스로 만드는 프로젝트를 진행하고 있습니다.
+[Projects](#featured-projects) · [Skills](#technical-skills) · [Awards](#awards--activities) · [GitHub](https://github.com/sdg331)
 
 </div>
 
 ---
 
-## 👋 About Me
+## Profile
 
-동양미래대학교 **인공지능소프트웨어학과**에서 공부하고 있습니다.
+동양미래대학교 **인공지능소프트웨어학과**에서 공부하고 있습니다.<br />
+문제 정의와 서비스 기획부터 시스템 설계, 개발, 검증까지 제품의 전체 흐름을 경험해 왔습니다.
 
-단순히 주어진 기능을 개발하는 것보다,
+- **AI Product** — 머신러닝과 생성형 AI를 사용자가 이해할 수 있는 서비스 경험으로 연결합니다.
+- **Full-stack Prototyping** — 프론트엔드, 백엔드, 데이터 흐름을 연결해 실제 시연 가능한 MVP를 만듭니다.
+- **Hardware Integration** — Raspberry Pi, NFC, 센서와 웹 애플리케이션을 하나의 제품으로 통합합니다.
+- **Project Leadership** — 사용자 시나리오, 시스템 요구사항, 팀 일정과 발표 자료를 함께 설계합니다.
 
-**Problem → Planning → Development → Validation → Improvement**
+> **Problem → Planning → Development → Validation → Improvement**
 
-의 전체 과정을 경험하며 실제 사용자의 문제를 해결하는 프로젝트를 만드는 것을 좋아합니다.
+## Technical Skills
 
-특히 AI 기술을 서비스에 적용하는 과정과
-소프트웨어·하드웨어·UX를 하나의 제품으로 통합하는 프로젝트에 관심이 있습니다.
+| Category | Skills |
+| --- | --- |
+| **Languages** | `Python` `Java` `JavaScript` `HTML` `CSS` |
+| **AI · Data** | `scikit-learn` `TF-IDF` `Pandas` `NumPy` `Computer Vision` `LLM` `STT` |
+| **Web** | `React` `Vite` `Streamlit` `REST API` |
+| **Data · Embedded** | `SQLite` `Raspberry Pi` `NFC` `Touch Display` `Sensors` |
+| **Engineering** | `Git` `GitHub Actions` `pytest` `Docker` `System Architecture` |
 
----
+## Featured Projects
 
-# 🚀 Featured Projects
+### Mirror-Ting · 거울형 직장 대화 훈련 서비스
 
-## 🪞 Mirror-Ting
+> 합격 이후 마주치는 보고·질문·피드백 상황을 미리 연습하고, 개선 방향을 확인하는 스마트미러 기반 서비스
 
-### Smart Mirror-based Workplace Dialogue Training System
+**Role** `Project Manager` `Hardware Lead` `System Planning`
 
-> **AI 기반 스마트미러 직장생활 시뮬레이션 & 코칭 시스템**
+- 사원증 발급부터 상황 선택, 음성 역할극, 4-Fit 피드백까지 이어지는 사용자 경험을 설계했습니다.
+- 프론트엔드·백엔드·AI 사이의 요구사항과 세션 흐름을 정의했습니다.
+- 스마트미러와 NFC 사원증 키오스크의 하드웨어 구성을 설계하고 팀 일정과 발표를 관리했습니다.
 
-취업 준비생과 사회초년생이 실제 직장에서 경험할 수 있는 상황을
-AI와의 역할극을 통해 반복적으로 연습할 수 있도록 설계한 프로젝트입니다.
+`React` `Vite` `FastAPI` `Computer Vision` `LLM` `STT` `NFC`
 
-업무 보고, 실수 설명, 예상하지 못한 질문, 피드백 대응 등
-현실적인 직장 상황을 AI가 재현하고 사용자의 **답변·음성·표정·자세**를 종합적으로 분석합니다.
+### [ReliefCheck](https://github.com/sdg331/CarpeDM_EswContest) · 오프라인 구호물자 지급 단말
 
-### Problem
+> 네트워크가 불안정한 재난 현장에서도 중복 지급을 막고, 지급 근거를 추적할 수 있는 Raspberry Pi 기반 단말
 
-기존 취업 교육은 면접 준비에 집중되어 있어
-실제 입사 이후 필요한 직장 커뮤니케이션을 연습할 수 있는 환경이 부족합니다.
+- 듀얼 NFC 입력, 정책 판정, 재고 관리, SQLite 감사 원장을 하나의 로컬 시스템으로 구성했습니다.
+- 거래를 원장에 먼저 확정한 뒤 출력 상태를 별도로 기록해 프린터 장애가 중복 지급으로 이어지지 않도록 설계했습니다.
+- NFC·프린터·카메라를 어댑터로 분리하고 단위 테스트와 검증 리포트 생성 흐름을 구현했습니다.
 
-### Solution
+`Python` `SQLite` `Raspberry Pi` `NFC` `HTML` `CSS` `JavaScript` `pytest`
 
-스마트미러 환경에서 AI 캐릭터와 실제 대화를 진행하고
-대화 과정의 언어적·비언어적 행동을 분석하여 개인화된 피드백을 제공합니다.
+### [Ginger](https://github.com/sdg331/ginger-app) · 학습자 사고 확장 코치
 
-### Core Features
+> 한국어 서술형 답변의 특징을 분석하고, 답을 대신 제시하지 않고 다음 단계의 질문을 추천하는 학습 서비스
 
-* LLM 기반 직장 상황 Role-Play
-* STT 기반 음성 대화 처리
-* AI 기반 답변 분석
-* Computer Vision 기반 표정 분석
-* Computer Vision 기반 자세 분석
-* Voice / Response / Expression / Posture 분석
-* 세션별 피드백 리포트
-* Smart Mirror 기반 자기관찰 UX
-* NFC 기반 사용자 경험 연동
+- TF-IDF와 분류 모델을 사용해 답변 특징을 Level 1~4로 분석하는 파이프라인을 구현했습니다.
+- 신뢰도가 낮은 결과에는 단정 대신 공통 보완 질문을 제공하는 fallback을 적용했습니다.
+- Streamlit UI, 모델 추론 모듈, 테스트, Docker 배포와 CI 흐름을 구성했습니다.
 
-### My Contribution
+`Python` `Streamlit` `scikit-learn` `TF-IDF` `Docker` `GitHub Actions`
 
-`Project Manager` `Hardware Lead` `System Planning`
+### [Neuro Drive](https://github.com/sdg331/neuro-drive) · 강화학습 AI 리터러시 게임
 
-* 프로젝트 아이디어 및 전체 서비스 구조 기획
-* 사용자 경험 및 시나리오 설계
-* AI 시스템 아키텍처 설계
-* Frontend · Backend · AI 간 기능 요구사항 정의
-* 스마트미러 및 사원증 키오스크 하드웨어 설계
-* 팀 역할 및 개발 일정 관리
-* 프로젝트 발표 및 문서화
+> AI가 학습하고 실패하는 과정을 직접 관찰·실험·대결하며 이해하는 브라우저 기반 교육 게임
 
-### Tech
+- 외부 ML 라이브러리 없이 DQN의 신경망, 역전파, 경험 재현, 타깃 네트워크를 JavaScript로 구현했습니다.
+- 학습 곡선, 가치 지도, 신경망 상태와 보상 해킹 실험을 시각화했습니다.
+- 설치 없이 실행되는 반응형 PWA와 오프라인 캐시를 구성했습니다.
 
-`React` `Vite` `Python` `Computer Vision` `LLM`
-`STT` `NFC` `Smart Mirror` `Web API`
+`JavaScript` `HTML` `CSS` `Canvas` `DQN` `PWA`
 
----
+[Live Demo](https://sdg331.github.io/neuro-drive/) · [Source Code](https://github.com/sdg331/neuro-drive)
 
-## 🧠 Ginger
+## More Projects
 
-### AI-based Korean Descriptive Answer Analysis
+- **[헛똑똑이 랩](https://github.com/sdg331/heotlab)** — AI 환각과 보상 해킹을 3분 안에 체험하는 서버 없는 AI 리터러시 웹앱 · [Live Demo](https://sdg331.github.io/heotlab/)
+- **[AI Indie Game Hackathon](https://github.com/sdg331/AI_INDIGAME_HACKATHON)** — Unity 기반 인디게임 해커톤 프로젝트
 
-> **한국어 서술형 답변을 분석하여 사고 수준을 분류하고 피드백하는 AI 서비스**
+## Awards & Activities
 
-사용자가 작성한 한국어 서술형 답변을 머신러닝으로 분석하여
-사고 수준을 단계별로 분류하고 결과에 따라 추가 질문과 피드백을 제공하는 프로젝트입니다.
+| Year | Result | Program · Competition |
+| --- | --- | --- |
+| 2026 | 우수상 | 학생참여형 리빙랩 활동 지원 프로그램 |
+| 2026 | 우수상 | 태일씨앤티 웹사이트 리뉴얼 경진대회 |
+| 2026 | 본선 진출 | 동양미래대학교 EXPO |
+| 2026 | 본선 진출 | 미래여성경제인육성사업 실전창업멘토링 및 IP 권리화 프로그램 |
+| 2026 | 본선 진출 | 도전! 메가시티 리그전 |
+| 2026 | 선발 | D.StartupZone 입주 학생 |
+| 2025 | 동상 | 한국실천공학회 교육장비개발대회 |
+| 2025 | 동상 | AI로 만드는 우리 대학 이야기 공모전 |
 
-### Problem
+## Contact
 
-객관식 평가만으로는 사용자가
-어떤 수준까지 내용을 이해하고 사고하고 있는지 판단하기 어렵습니다.
-
-### Solution
-
-한국어 서술형 데이터를 TF-IDF로 벡터화하고
-여러 머신러닝 분류 모델을 비교하여 사용자의 사고 수준을 예측하도록 구현했습니다.
-
-### ML Pipeline
-
-```text
-User Answer
-     ↓
-Text Preprocessing
-     ↓
-TF-IDF Vectorization
-     ↓
-Machine Learning Model
-     ↓
-Thinking Level Classification
-     ↓
-Confidence Analysis
-     ↓
-Feedback / Follow-up Question
-```
-
-### Models
-
-* Logistic Regression
-* Support Vector Machine
-* Decision Tree
-* Random Forest
-
-### Evaluation
-
-* Accuracy
-* Precision
-* Recall
-* F1 Score
-* ROC-AUC
-
-### Key Feature
-
-예측 신뢰도가 낮은 답변의 경우
-단순 결과 출력 대신 추가 질문을 제공하여 사용자의 사고를 다시 확인하도록 설계했습니다.
-
-### Tech
-
-`Python` `scikit-learn` `TF-IDF`
-`Pandas` `NumPy` `Machine Learning`
-
----
-
-## 🗣 RISE
-
-### Voice-based Accessible Kiosk
-
-> **고령층의 디지털 접근성을 위한 음성 기반 주문 키오스크**
-
-기존 터치스크린 중심 키오스크 사용에 어려움을 겪는 고령층을 위해
-음성 인터페이스를 활용한 주문 시스템을 제작한 프로젝트입니다.
-
-### Problem
-
-기존 키오스크는 작은 글씨, 복잡한 메뉴 구조와
-터치 중심 인터페이스로 인해 디지털 취약계층에게 높은 사용 장벽을 제공합니다.
-
-### Solution
-
-사용자가 화면을 여러 번 탐색하지 않아도
-음성으로 원하는 메뉴를 말하고 주문을 진행할 수 있도록 인터페이스를 설계했습니다.
-
-### Core Features
-
-* Voice-based Menu Selection
-* Touch + Voice Hybrid Interface
-* 사용자 중심 주문 프로세스
-* Raspberry Pi 기반 키오스크
-* Touch Display 연동
-* Web UI 기반 화면 구성
-
-### Hardware
-
-```text
-Raspberry Pi 5
-     +
-10.1" Touch Display
-     +
-Microphone / Speaker
-     +
-Web Application
-```
-
-### My Contribution
-
-* 서비스 아이디어 및 UX 기획
-* 키오스크 사용자 플로우 설계
-* Raspberry Pi 하드웨어 구성
-* 터치 디스플레이 환경 구축
-* 음성 인터페이스 기획
-* 시제품 통합 및 테스트
-
-### Tech
-
-`Raspberry Pi` `Python` `Web`
-`Voice Interface` `Touch Display`
-
----
-
-# 🧩 What I Build
-
-저는 특정 기술 하나에 프로젝트를 맞추기보다
-**문제를 해결하기 위해 필요한 기술을 조합하는 방식**으로 개발합니다.
-
-```text
-          Problem
-             │
-             ▼
-      Service Planning
-             │
-             ▼
-     System Architecture
-        ┌────┴────┐
-        ▼         ▼
-       AI       Software
-        │         │
-        └────┬────┘
-             ▼
-          Hardware
-             │
-             ▼
-           Product
-```
-
-### AI
-
-`Machine Learning` `Computer Vision` `LLM`
-`STT` `Data Analysis`
-
-### Software
-
-`Python` `Java` `JavaScript`
-`React` `Vite` `HTML` `CSS`
-
-### Hardware / Embedded
-
-`Raspberry Pi` `NFC` `Sensors`
-`Touch Display` `Smart Mirror`
-
-### Product
-
-`Project Management` `Service Planning`
-`UX Design` `System Architecture` `Prototyping`
-
----
-
-# 🏆 Awards & Achievements
-
-### 2026
-
-* 🏆 **동양미래대학교 EXPO 본선 진출**
-
-* 🚀 **미래여성경제인육성사업 실전창업멘토링 및 IP 권리화 프로그램 본선 진출**
-
-* 🥈 **학생참여형 리빙랩 활동 지원 프로그램 우수상**
-
-* 🥈 **태일씨앤티 웹사이트 리뉴얼 경진대회 우수상**
-
-* 🚀 **도전! 메가시티 리그전 본선 진출**
-
-* 🚀 **D.StartupZone 입주 학생 선발**
-
-### 2025
-
-* 🥉 **한국실천공학회 교육장비개발대회 동상**
-
-* 🥉 **AI로 만드는 우리 대학 이야기 공모전 동상**
-
----
-
-# 🛠 Tech Stack
-
-### Languages
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square\&logo=python\&logoColor=white)
-![Java](https://img.shields.io/badge/Java-007396?style=flat-square\&logo=openjdk\&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square\&logo=javascript\&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square\&logo=html5\&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square\&logo=css3\&logoColor=white)
-
-### AI / Data
-
-![Scikit Learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square\&logo=scikitlearn\&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square\&logo=opencv\&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square\&logo=pandas\&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square\&logo=numpy\&logoColor=white)
-
-### Frontend / Tools
-
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square\&logo=react\&logoColor=black)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square\&logo=vite\&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square\&logo=git\&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square\&logo=github\&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square\&logo=figma\&logoColor=white)
-![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-A22846?style=flat-square\&logo=raspberrypi\&logoColor=white)
-
----
-
-# 📊 GitHub
-
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=sdg331\&show_icons=true\&hide_border=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=sdg331\&layout=compact\&hide_border=true)
-
-</div>
-
----
-
-# 🎯 Currently Interested In
-
-```text
-AI-powered Products
-Computer Vision
-Human-AI Interaction
-Embedded Systems
-AI Service Development
-Product Management
-Startup & Prototyping
-```
-
----
-
-# 📫 Contact
-
-**GitHub**
-https://github.com/sdg331
+- **GitHub** — [github.com/sdg331](https://github.com/sdg331)
+- **Location** — Seoul, Republic of Korea
 
 ---
 
 <div align="center">
 
-### From Problem to Product.
-
-**Discover → Design → Develop → Validate**
+**From Problem to Product.**<br />
+Discover · Design · Develop · Validate
 
 </div>
