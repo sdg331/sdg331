@@ -89,7 +89,7 @@ Hardware / External System
 | ------------------------- | -------------------------------------------------------------------- |
 | **AI · Machine Learning** | `scikit-learn` `TF-IDF` `Computer Vision` `LLM` `STT`                |
 | **Data**                  | `Pandas` `NumPy` `SQLite`                                            |
-| **Languages**             | `Python` `Java` `JavaScript` `HTML` `CSS`                            |
+| **Languages**             | `Python` `Java` `JavaScript` `TypeScript` `HTML` `CSS`               |
 | **Frontend**              | `React` `Vite` `Streamlit`                                           |
 | **Backend**               | `FastAPI` `REST API`                                                 |
 | **Embedded · IoT**        | `Raspberry Pi` `NFC` `Sensors` `Touch Display`                       |
@@ -100,32 +100,38 @@ Hardware / External System
 
 # Featured Projects
 
-## Mirror-Ting
+## [4-Fit MirrorTing](https://github.com/sdg331/CarpeDM_EXPO_Microsite)
 
-### AI 기반 거울형 직장 대화 훈련 시스템
+### AI 기반 스마트미러 직장생활 시뮬레이션 · 피드백 시스템
 
-> 실제 직장에서 발생할 수 있는 보고, 질문, 피드백 상황을 AI와 연습하고 자신의 커뮤니케이션을 확인하는 스마트미러 기반 서비스
+> 실전에서 처음 겪지 않도록, 보고·질문·피드백 등 직장생활의 순간을 AI와 미리 경험하고 자신의 커뮤니케이션을 점검하는 EXPO 프로젝트
 
 **Role**
 `Project Manager` `System Planning` `Hardware Lead`
 
 **AI & System**
 
-* 음성 기반 사용자 인터랙션 흐름 설계
+* 음성 기반 사용자 인터랙션과 직장 대화 시나리오 흐름 설계
 * STT와 LLM을 활용한 대화형 역할극 시스템 구성
 * Computer Vision 기반 사용자 인터랙션 구조 설계
-* 사용자 행동과 대화 결과를 연결하는 피드백 경험 설계
-* AI · Frontend · Backend 사이의 세션 및 데이터 흐름 정의
+* 표정 · 목소리 · 내용 · 상황의 **4-Fit 관점**으로 피드백 경험 설계
+* AI · Frontend · Backend · Hardware 사이의 세션 및 데이터 흐름 정의
 
-**Hardware**
+**Hardware & Experience**
 
 * 65인치 스마트미러 시스템
 * Azure Kinect 기반 사용자 인식
 * NFC 사원증 연동
-* Raspberry Pi 기반 사원증 발급 키오스크
-* 기관 관리자용 분석 대시보드
+* Raspberry Pi 기반 사원증 발급 · 퇴근 리포트 키오스크
+* 기관 관리자용 조직 대화 훈련 분석 대시보드
 
-`React` `Vite` `FastAPI` `Computer Vision` `LLM` `STT` `NFC` `Raspberry Pi`
+**Project Repositories**
+
+* [EXPO Microsite](https://github.com/sdg331/CarpeDM_EXPO_Microsite) — React · TypeScript 기반 프로젝트 소개 사이트
+* [ID Printer Kiosk](https://github.com/sdg331/CarpeDM_EXPO_IDPrinter) — Raspberry Pi · NFC · 감열 프린터 체험 키오스크
+* [Admin Dashboard](https://github.com/sdg331/CarpeDM_EXPO_dashboard) — React 기반 조직 대화 훈련 현황 대시보드
+
+`React` `TypeScript` `Vite` `FastAPI` `Computer Vision` `LLM` `STT` `NFC` `Raspberry Pi`
 
 ---
 
