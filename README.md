@@ -1,316 +1,234 @@
 <div align="center">
 
-# 김지연 · Kim Jiyeon
+<img src="./assets/profile-hero-v2.svg" width="100%" alt="Jiyeon Kim — AI Software, Product Engineering, Human-AI Experience" />
 
-### AI Software Developer · AI Engineer in Progress
+<br/>
 
-**인공지능을 이해하는 것에서 끝나지 않고, 실제로 동작하는 시스템으로 구현합니다.**
+### AI를 모델에서 끝내지 않고, 사용자가 직접 경험하는 제품과 시스템까지 연결합니다.
 
-데이터와 모델을 이해하고,
-AI · Web · Embedded 기술을 연결해
-사용자가 직접 경험할 수 있는 제품을 만드는 개발자를 목표로 하고 있습니다.
+`AI Software` · `Product Engineering` · `Web` · `Embedded` · `Human-AI Experience`
 
-[Projects](#featured-projects) · [AI Focus](#ai-engineering-focus) · [Skills](#technical-skills) · [Awards](#awards)
+<br/>
+
+<a href="#selected-work">Selected Work</a> ·
+<a href="#toolkit">Toolkit</a> ·
+<a href="#highlights">Highlights</a> ·
+<a href="#currently">Currently</a>
 
 </div>
 
 ---
 
-## About Me
+## Hello, I'm Jiyeon.
 
-동양미래대학교 **인공지능소프트웨어학과**에서 AI와 소프트웨어 개발을 공부하고 있습니다.
+동양미래대학교 **인공지능소프트웨어학과**에서 AI와 소프트웨어를 공부하고 있는 김지연입니다.
 
-단순히 AI API를 사용하는 개발자가 아니라,
+저는 하나의 기술만 구현하는 것보다, **문제를 정의하고 AI·소프트웨어·하드웨어·사용자 경험을 연결해 실제로 동작하는 결과물을 만드는 과정**에 관심이 있습니다.
 
-**문제 정의 → 데이터와 AI 방법 선택 → 모델 및 시스템 구현 → 평가 → 실제 제품 적용**
+특히 다음과 같은 문제를 좋아합니다.
 
-전체 과정을 이해하고 수행할 수 있는 AI 엔지니어로 성장하는 것이 목표입니다.
+- AI 모델이나 LLM을 **실제 서비스 흐름**에 연결하는 일
+- Web · Backend · Data · Embedded를 묶어 **end-to-end 시스템**을 만드는 일
+- Raspberry Pi, NFC, Camera, Sensor 같은 장치를 활용해 **화면 밖의 사용자 경험**을 설계하는 일
+- 아이디어를 빠르게 프로토타입으로 만들고, 직접 테스트하며 개선하는 일
 
-현재는 머신러닝, 자연어 처리, Computer Vision, LLM 기반 서비스를 중심으로 공부하면서
-웹 애플리케이션과 Raspberry Pi, NFC, 센서 등의 하드웨어를 연결해 실제 환경에서 사용할 수 있는 시스템을 만들고 있습니다.
-
-제가 중요하게 생각하는 것은 기술 자체보다
-**“이 AI가 실제 문제를 해결할 수 있는가?”** 입니다.
-
----
-
-## AI Engineering Focus
-
-현재 다음 영역을 중심으로 AI 전문성을 확장하고 있습니다.
-
-### Machine Learning
-
-* `scikit-learn` 기반 머신러닝 파이프라인
-* 데이터 전처리 및 특징 추출
-* 텍스트 분류
-* TF-IDF 기반 자연어 처리
-* 모델 예측 결과와 신뢰도 처리
-
-### Generative AI · LLM
-
-* LLM 기반 대화형 서비스
-* 사용자 입력에 따른 AI 응답 흐름 설계
-* AI 서비스와 백엔드 시스템 연동
-* STT와 LLM을 연결한 음성 기반 인터랙션
-* 생성형 AI를 실제 제품 경험으로 연결하는 방법 탐구
-
-### Computer Vision
-
-* 카메라 기반 사용자 인식
-* 영상 입력을 활용한 인터랙티브 시스템
-* Computer Vision과 웹 서비스의 연동
-* 실제 공간에서 동작하는 AI 인터페이스 구현
-
-### AI Product Engineering
-
-AI 모델만 만드는 것이 아니라,
-
-```text
-User
- ↓
-Interface
- ↓
-AI / ML
- ↓
-Backend
- ↓
-Data
- ↓
-Hardware / External System
-```
-
-전체 시스템이 연결되어 동작하는 구조를 만드는 것에 관심이 있습니다.
+> **Problem → Prototype → Evaluate → Integrate → Improve**
 
 ---
 
-## Technical Skills
+# Selected Work
 
-| Area                      | Technologies                                                         |
-| ------------------------- | -------------------------------------------------------------------- |
-| **AI · Machine Learning** | `scikit-learn` `TF-IDF` `Computer Vision` `LLM` `STT`                |
-| **Data**                  | `Pandas` `NumPy` `SQLite`                                            |
-| **Languages**             | `Python` `Java` `JavaScript` `TypeScript` `HTML` `CSS`               |
-| **Frontend**              | `React` `Vite` `Streamlit`                                           |
-| **Backend**               | `FastAPI` `REST API`                                                 |
-| **Embedded · IoT**        | `Raspberry Pi` `NFC` `Sensors` `Touch Display`                       |
-| **Engineering**           | `Git` `GitHub Actions` `pytest` `Docker`                             |
-| **System Design**         | `AI Service Architecture` `Hardware Integration` `Rapid Prototyping` |
+## 01. 4-Fit MirrorTing
 
----
+### AI Smart Mirror for Workplace Communication Training
 
-# Featured Projects
+**직장생활에서 처음 마주칠 수 있는 대화 상황을 AI와 미리 경험하고, 자신의 커뮤니케이션을 점검하는 스마트미러 기반 시뮬레이션 시스템**
 
-## [4-Fit MirrorTing](https://github.com/sdg331/CarpeDM_EXPO_Microsite)
-
-### AI 기반 스마트미러 직장생활 시뮬레이션 · 피드백 시스템
-
-> 실전에서 처음 겪지 않도록, 보고·질문·피드백 등 직장생활의 순간을 AI와 미리 경험하고 자신의 커뮤니케이션을 점검하는 EXPO 프로젝트
-
-**Role**
 `Project Manager` `System Planning` `Hardware Lead`
 
-**AI & System**
+**What I worked on**
 
-* 음성 기반 사용자 인터랙션과 직장 대화 시나리오 흐름 설계
-* STT와 LLM을 활용한 대화형 역할극 시스템 구성
-* Computer Vision 기반 사용자 인터랙션 구조 설계
-* 표정 · 목소리 · 내용 · 상황의 **4-Fit 관점**으로 피드백 경험 설계
-* AI · Frontend · Backend · Hardware 사이의 세션 및 데이터 흐름 정의
+- 음성 기반 직장 대화 시나리오와 사용자 체험 흐름 설계
+- STT · LLM · Computer Vision을 연결하는 전체 시스템 구조 설계
+- 표정 · 목소리 · 내용 · 상황을 결합한 **4-Fit 피드백 경험** 기획
+- 65인치 스마트미러, Azure Kinect, NFC, Raspberry Pi 키오스크 등 하드웨어 통합
+- Frontend · Backend · AI · Hardware 간 세션 및 데이터 흐름 정의
+- EXPO 체험 동선, 관리자 대시보드, 프로젝트 웹사이트까지 하나의 서비스 경험으로 연결
 
-**Hardware & Experience**
+**Repositories**
 
-* 65인치 스마트미러 시스템
-* Azure Kinect 기반 사용자 인식
-* NFC 사원증 연동
-* Raspberry Pi 기반 사원증 발급 · 퇴근 리포트 키오스크
-* 기관 관리자용 조직 대화 훈련 분석 대시보드
+[EXPO Microsite](https://github.com/sdg331/CarpeDM_EXPO_Microsite) ·
+[ID Printer Kiosk](https://github.com/sdg331/CarpeDM_EXPO_IDPrinter) ·
+[Admin Dashboard](https://github.com/sdg331/CarpeDM_EXPO_dashboard)
 
-**Project Repositories**
-
-* [EXPO Microsite](https://github.com/sdg331/CarpeDM_EXPO_Microsite) — React · TypeScript 기반 프로젝트 소개 사이트
-* [ID Printer Kiosk](https://github.com/sdg331/CarpeDM_EXPO_IDPrinter) — Raspberry Pi · NFC · 감열 프린터 체험 키오스크
-* [Admin Dashboard](https://github.com/sdg331/CarpeDM_EXPO_dashboard) — React 기반 조직 대화 훈련 현황 대시보드
-
-`React` `TypeScript` `Vite` `FastAPI` `Computer Vision` `LLM` `STT` `NFC` `Raspberry Pi`
+`React` `TypeScript` `FastAPI` `LLM` `STT` `Computer Vision` `NFC` `Raspberry Pi`
 
 ---
 
-## [Ginger](https://github.com/sdg331/ginger-app)
+## 02. Ginger
 
-### 학습자의 생각을 확장하는 AI 질문 코치
+### AI Question Coach for Deeper Thinking
 
-> 정답을 바로 제공하기보다 사용자의 답변을 분석하고 다음 사고 단계로 이어지는 질문을 제공하는 학습 서비스
+**정답을 바로 제공하기보다, 학습자의 답변을 분석하고 다음 사고 단계로 이어지는 질문을 제공하는 AI 학습 서비스**
 
-**AI Focus**
+- 한국어 서술형 답변을 TF-IDF 특징으로 변환
+- `scikit-learn` 기반 분류 모델 구축
+- 답변 특징을 Level 1–4 형태로 분석
+- 낮은 예측 신뢰도에 대한 fallback 처리
+- 추론 로직과 UI를 분리한 구조 설계
+- pytest · Docker · GitHub Actions 기반 실행 및 검증 환경 구성
 
-* 한국어 서술형 답변을 TF-IDF 특징으로 변환
-* `scikit-learn` 기반 분류 모델 구축
-* 답변 특징을 Level 1~4 형태로 분석
-* 예측 신뢰도가 낮은 상황을 위한 fallback 처리
-* 모델 추론 과정과 사용자 인터페이스 분리
+[Repository](https://github.com/sdg331/ginger-app)
 
-**Engineering**
-
-* Streamlit 기반 인터페이스
-* AI 추론 모듈 구조화
-* 테스트 코드 작성
-* Docker 실행 환경 구성
-* GitHub Actions 기반 CI 구성
-
-`Python` `scikit-learn` `TF-IDF` `Streamlit` `Docker` `GitHub Actions`
+`Python` `scikit-learn` `TF-IDF` `Streamlit` `pytest` `Docker` `GitHub Actions`
 
 ---
 
-## [Neuro Drive](https://github.com/sdg331/neuro-drive)
+## 03. Neuro Drive
 
-### 강화학습 과정을 직접 관찰하는 AI 리터러시 게임
+### Reinforcement Learning You Can Watch
 
-> AI가 학습하고 실패하고 전략을 바꾸는 과정을 사용자가 직접 실험할 수 있도록 만든 브라우저 기반 교육 프로젝트
+**AI가 학습하고 실패하고 전략을 바꾸는 과정을 사용자가 직접 관찰할 수 있도록 만든 브라우저 기반 AI 리터러시 프로젝트**
 
-**AI Focus**
+외부 머신러닝 프레임워크 없이 JavaScript로 다음 요소를 직접 구현했습니다.
 
-외부 머신러닝 라이브러리를 사용하지 않고 JavaScript로 직접 구현했습니다.
+- Deep Q-Network
+- Neural Network
+- Forward / Backpropagation
+- Experience Replay
+- Target Network
+- Reward-based Learning
 
-* Deep Q-Network 구조
-* Neural Network
-* Forward Propagation
-* Backpropagation
-* Experience Replay
-* Target Network
-* Reward 기반 학습 과정
+또한 Learning Curve, Value Map, Neural Network State, Reward Hacking Experiment를 시각화해 **AI의 학습 과정을 결과가 아닌 과정으로 이해할 수 있도록** 설계했습니다.
 
-학습 결과를 단순 점수로 보여주는 대신,
-
-* Learning Curve
-* Value Map
-* Neural Network State
-* Reward Hacking Experiment
-
-등을 시각화해 AI의 학습 과정을 관찰할 수 있도록 설계했습니다.
+[Live Demo](https://sdg331.github.io/neuro-drive/) · [Repository](https://github.com/sdg331/neuro-drive)
 
 `JavaScript` `HTML` `CSS` `Canvas` `DQN` `PWA`
 
-[Live Demo](https://sdg331.github.io/neuro-drive/) · [Source Code](https://github.com/sdg331/neuro-drive)
-
 ---
 
-## [ReliefCheck](https://github.com/sdg331/CarpeDM_EswContest)
+## 04. ReliefCheck
 
-### 네트워크 없이 동작하는 구호물자 지급 관리 시스템
+### Offline Relief Distribution Management System
 
-> 인터넷 연결이 불안정한 재난 현장에서도 중복 지급을 방지하고 지급 기록을 관리할 수 있는 Raspberry Pi 기반 시스템
+**네트워크가 불안정한 재난 현장에서도 중복 지급을 방지하고 지급 기록을 관리할 수 있도록 설계한 Raspberry Pi 기반 시스템**
 
-**System Engineering**
+- 듀얼 NFC 입력 및 지급 정책 판정
+- SQLite 기반 재고 및 감사 원장 관리
+- 감열 프린터 · 카메라 · NFC 장치 통합
+- 거래 상태와 출력 상태를 분리해 프린터 오류가 중복 거래로 이어지지 않도록 설계
+- 하드웨어별 Adapter 구조와 단위 테스트 적용
 
-* 듀얼 NFC 입력
-* 지급 정책 판정
-* 재고 관리
-* SQLite 기반 감사 원장
-* 영수증 출력
-* 카메라 및 하드웨어 연동
-
-거래 상태와 프린터 출력 상태를 분리하여
-출력 오류가 실제 거래 중복으로 이어지지 않도록 시스템을 설계했습니다.
-
-NFC · Printer · Camera 등의 장치를 어댑터 구조로 분리하고
-단위 테스트와 검증 리포트 생성 흐름을 구현했습니다.
+[Repository](https://github.com/sdg331/CarpeDM_EswContest)
 
 `Python` `SQLite` `Raspberry Pi` `NFC` `JavaScript` `pytest`
 
 ---
 
-## More Projects
+### More Experiments
 
-### [헛똑똑이 랩](https://github.com/sdg331/heotlab)
+**[헛똑똑이 랩](https://github.com/sdg331/heotlab)**  
+Hallucination과 Reward Hacking을 짧은 실험으로 경험하는 AI 리터러시 웹 애플리케이션 · [Live Demo](https://sdg331.github.io/heotlab/)
 
-AI의 **Hallucination**과 **Reward Hacking**을 짧은 실험으로 경험할 수 있도록 만든 AI 리터러시 웹 애플리케이션
-
-[Live Demo](https://sdg331.github.io/heotlab/)
-
-### [AI Indie Game Hackathon](https://github.com/sdg331/AI_INDIGAME_HACKATHON)
-
+**[AI Indie Game Hackathon](https://github.com/sdg331/AI_INDIGAME_HACKATHON)**  
 Unity 기반 AI 인디게임 해커톤 프로젝트
 
 ---
 
-# How I Approach AI
+# Toolkit
 
-AI를 사용할 때 다음 과정을 중요하게 생각합니다.
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=python,java,js,ts,react,fastapi,sqlite,docker,git,github,raspberrypi,figma&perline=12" alt="Python, Java, JavaScript, TypeScript, React, FastAPI, SQLite, Docker, Git, GitHub, Raspberry Pi, Figma" />
+</div>
+
+<br/>
+
+| Area | Working With |
+| --- | --- |
+| **AI · ML** | scikit-learn · TF-IDF · LLM Applications · STT · Computer Vision |
+| **Data** | Pandas · NumPy · SQLite |
+| **Frontend** | React · TypeScript · JavaScript · Vite · Streamlit |
+| **Backend** | Python · FastAPI · REST API |
+| **Embedded** | Raspberry Pi · NFC · Camera · Sensors · Touch Display |
+| **Engineering** | Git · GitHub Actions · pytest · Docker |
+| **Product** | System Planning · Rapid Prototyping · UI/UX · Hardware Integration |
+
+---
+
+# How I Build
 
 ```text
-1. Define the Problem
-        ↓
-2. Understand the Data
-        ↓
-3. Choose the AI Approach
-        ↓
-4. Build a Baseline
-        ↓
-5. Implement the System
-        ↓
-6. Evaluate the Result
-        ↓
-7. Integrate with the Product
-        ↓
-8. Improve
+Define the problem
+      ↓
+Build the smallest working prototype
+      ↓
+Measure what actually works
+      ↓
+Connect AI with the product experience
+      ↓
+Test in the real environment
+      ↓
+Improve
 ```
 
-AI 모델의 성능만 보는 것이 아니라
-사용자가 실제로 사용할 수 있는 전체 시스템을 만드는 것을 목표로 합니다.
+저는 모델 정확도만 높이는 것보다 **사용자가 실제로 사용할 수 있는 전체 시스템을 완성하는 것**을 중요하게 생각합니다.
+
+그래서 새로운 기술을 배울 때도 가능한 한 작은 실험으로 직접 구현하고, 결과를 확인한 뒤 다음 단계로 확장합니다.
 
 ---
 
-# Currently Learning
+# Currently
 
-현재 다음 주제를 더 깊게 공부하고 있습니다.
+**Building**
+- 4-Fit MirrorTing — AI 기반 스마트미러 직장생활 시뮬레이션 시스템
+- AI · Web · Embedded가 연결되는 실제 체험형 프로덕트
 
-* Machine Learning fundamentals
-* Deep Learning
-* Natural Language Processing
-* Computer Vision
-* LLM-based Applications
-* AI Model Evaluation
-* AI System Architecture
-* AI Deployment & MLOps
+**Deepening**
+- Machine Learning fundamentals
+- Deep Learning
+- Natural Language Processing
+- Computer Vision
+- LLM application architecture
+- Model evaluation
+- AI deployment & MLOps
 
-장기적으로는 특정 AI 도구에 의존하는 것이 아니라
-새로운 문제를 만났을 때 적절한 모델과 기술을 선택하고 직접 검증할 수 있는
-**AI Engineer**가 되는 것이 목표입니다.
+**Exploring**
+- AI × Product Design
+- AI × Education
+- AI × Physical Computing
+- AI를 활용한 빠른 실험과 서비스 검증
 
 ---
 
-# Awards
+# Highlights
+
+### Awards
 
 | Year | Award | Program · Competition |
-| ---- | ----- | --------------------- |
-| 2026 | 우수상   | 학생참여형 리빙랩 활동 지원 프로그램  |
-| 2026 | 우수상   | 태일씨앤티 웹사이트 리뉴얼 경진대회   |
-| 2025 | 동상    | 한국실천공학회 교육장비개발대회      |
-| 2025 | 동상    | AI로 만드는 우리 대학 이야기 공모전 |
+| --- | --- | --- |
+| 2026 | 우수상 | 학생참여형 리빙랩 활동 지원 프로그램 |
+| 2026 | 우수상 | 태일씨앤티 웹사이트 리뉴얼 경진대회 |
+| 2025 | 동상 | 한국실천공학회 교육장비개발대회 |
+| 2025 | 동상 | AI로 만드는 우리 대학 이야기 공모전 |
 
-## Activities
+### Activities
 
-| Year | Result | Program                           |
-| ---- | ------ | --------------------------------- |
-| 2026 | 본선 진출  | 동양미래대학교 EXPO                      |
-| 2026 | 본선 진출  | 미래여성경제인육성사업 실전창업멘토링 및 IP 권리화 프로그램 |
-| 2026 | 본선 진출  | 도전! 메가시티 리그전                      |
-| 2026 | 선발     | D.StartupZone 입주 학생               |
-| 2026 | 참여     | AI Indie Game Hackathon           |
-
----
-
-## Contact
-
-**GitHub**
-[github.com/sdg331](https://github.com/sdg331)
+`2026 동양미래대학교 EXPO 본선` ·
+`실전창업멘토링 및 IP 권리화 프로그램 본선` ·
+`도전! 메가시티 리그전 본선` ·
+`D.StartupZone 입주 학생` ·
+`AI Indie Game Hackathon`
 
 ---
 
 <div align="center">
 
-### From AI Models to Real-World Systems
+### Build AI that works beyond the demo.
 
-**Learn · Build · Evaluate · Improve**
+**Learn · Build · Evaluate · Connect · Improve**
+
+<br/>
+
+[![GitHub](https://img.shields.io/badge/GitHub-sdg331-181717?style=for-the-badge&logo=github)](https://github.com/sdg331)
 
 </div>
