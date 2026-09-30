@@ -1,0 +1,59 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="20" x2="1120" y2="340" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1020"/>
+      <stop offset="0.52" stop-color="#111B3A"/>
+      <stop offset="1" stop-color="#10243A"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="200" y1="80" x2="980" y2="270" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C8CFF"/>
+      <stop offset="0.5" stop-color="#9B7CFF"/>
+      <stop offset="1" stop-color="#47D7C8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(940 80) rotate(130) scale(360 260)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6C63FF" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#6C63FF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="360" rx="28" fill="url(#bg)"/>
+  <rect width="1200" height="360" rx="28" fill="url(#glow)"/>
+
+  <g opacity="0.12" stroke="#B8C2FF">
+    <path d="M0 90H1200"/>
+    <path d="M0 180H1200"/>
+    <path d="M0 270H1200"/>
+    <path d="M120 0V360"/>
+    <path d="M300 0V360"/>
+    <path d="M480 0V360"/>
+    <path d="M660 0V360"/>
+    <path d="M840 0V360"/>
+    <path d="M1020 0V360"/>
+  </g>
+
+  <g opacity="0.9">
+    <circle cx="970" cy="175" r="92" stroke="url(#accent)" stroke-width="2"/>
+    <circle cx="970" cy="175" r="58" stroke="#7C8CFF" stroke-opacity="0.45"/>
+    <circle cx="970" cy="175" r="9" fill="#8C83FF"/>
+    <circle cx="1046" cy="134" r="6" fill="#47D7C8"/>
+    <circle cx="914" cy="228" r="5" fill="#9B7CFF"/>
+    <path d="M876 175H1064" stroke="url(#accent)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M970 81V269" stroke="url(#accent)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M904 109L1036 241" stroke="#7C8CFF" stroke-opacity="0.55" stroke-width="1.5"/>
+    <path d="M1036 109L904 241" stroke="#47D7C8" stroke-opacity="0.35" stroke-width="1.5"/>
+  </g>
+
+  <circle cx="1035" cy="74" r="70" fill="#7C8CFF" fill-opacity="0.12" filter="url(#blur)"/>
+  <circle cx="1120" cy="270" r="80" fill="#47D7C8" fill-opacity="0.1" filter="url(#blur)"/>
+
+  <text x="72" y="82" fill="#9CA8C7" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="3">AI SOFTWARE · PRODUCT ENGINEERING · HUMAN-AI EXPERIENCE</text>
+  <text x="68" y="168" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="800" letter-spacing="-1">JIYEON KIM</text>
+  <rect x="72" y="194" width="500" height="4" rx="2" fill="url(#accent)"/>
+  <text x="72" y="242" fill="#D9E1F2" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="500">From AI models to real-world systems.</text>
+  <text x="72" y="286" fill="#93A2C8" font-family="Arial, Helvetica, sans-serif" font-size="18">Build · Validate · Connect · Improve</text>
+
+  <text x="1080" y="330" fill="#7784A8" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="end" letter-spacing="1.5">GITHUB / SDG331</text>
+</svg>
