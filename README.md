@@ -214,7 +214,7 @@ Improve
 ### Activities
 
 `2026 동양미래대학교 EXPO 본선` ·
-`실전창업멘토링 및 IP 권리화 프로그램 본선` ·
+`실전창업멘토링 및 IP 권리화 프로그램 본선(심화 멘토링 진행중)` ·
 `도전! 메가시티 리그전 본선` ·
 `D.StartupZone 입주 학생` ·
 `AI Indie Game Hackathon`
