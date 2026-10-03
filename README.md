@@ -123,8 +123,23 @@
 
 `Python` `SQLite` `Raspberry Pi` `NFC` `JavaScript` `pytest`
 
----
+## 05. 근거노트
 
+### Evidence-linked Korean Document Q&A
+
+**채용 가이드에서 필요한 내용을 질문하고, 답변의 출처·쪽수와 발췌 요약을 직접 확인하는 한국어 문서 질의응답 데모**
+
+- 한국어 문서 검색과 선택형 로컬 Ollama 답변 생성
+- 근거가 부족한 질문은 답변을 보류하고, 찾은 내용은 쪽수·공식 원문 링크와 함께 표시
+- 읽기 전용 시연 모드와 재현 가능한 작은 검색 평가 세트 구성
+
+**시연 자료 범위:** 2024년 공감채용 핸드북의 인쇄 53·64·70쪽을 검수해 요약했습니다. 전체 PDF 검색이나 현행 법률 안내는 아닙니다.
+
+[Repository](https://github.com/sdg331/evidence-note)
+
+`React` `TypeScript` `FastAPI` `SQLite` `Ollama` `pytest`
+
+---
 ### More Experiments
 
 **[헛똑똑이 랩](https://github.com/sdg331/heotlab)**  
@@ -182,6 +197,7 @@ Improve
 **Building**
 - 4-Fit MirrorTing — AI 기반 스마트미러 직장생활 시뮬레이션 시스템
 - AI · Web · Embedded가 연결되는 실제 체험형 프로덕트
+- 근거노트 — 출처와 쪽수를 확인하는 한국어 문서 질의응답 데모
 
 **Deepening**
 - Machine Learning fundamentals
