@@ -12,8 +12,8 @@
 
 <a href="#selected-work">Selected Work</a> ·
 <a href="#toolkit">Toolkit</a> ·
-<a href="#highlights">Highlights</a> ·
-<a href="#currently">Currently</a>
+<a href="#currently">Currently</a> ·
+<a href="#highlights">Highlights</a>
 
 </div>
 
@@ -23,14 +23,11 @@
 
 동양미래대학교 **인공지능소프트웨어학과**에서 AI와 소프트웨어를 공부하고 있는 김지연입니다.
 
-저는 하나의 기술만 구현하는 것보다, **문제를 정의하고 AI·소프트웨어·하드웨어·사용자 경험을 연결해 실제로 동작하는 결과물을 만드는 과정**에 관심이 있습니다.
+**문제 정의부터 AI·웹·하드웨어의 연결, 테스트와 운영 흐름까지** 살피며 실제로 사용할 수 있는 시스템을 만드는 데 관심이 있습니다. 특히 대화형 AI, 컴퓨터비전, 학습을 돕는 인터랙션을 탐구하고 있습니다.
 
-특히 다음과 같은 문제를 좋아합니다.
-
-- AI 모델이나 LLM을 **실제 서비스 흐름**에 연결하는 일
-- Web · Backend · Data · Embedded를 묶어 **end-to-end 시스템**을 만드는 일
-- Raspberry Pi, NFC, Camera, Sensor 같은 장치를 활용해 **화면 밖의 사용자 경험**을 설계하는 일
-- 아이디어를 빠르게 프로토타입으로 만들고, 직접 테스트하며 개선하는 일
+- **AI applications** — 모델과 LLM을 사용자의 입력·응답·피드백 흐름에 연결합니다.
+- **End-to-end systems** — 프런트엔드, API, 데이터와 장치 사이의 계약을 설계합니다.
+- **Reliable experiences** — 정상 동작뿐 아니라 오류·재시도·복구와 구현의 한계도 확인합니다.
 
 > **Problem → Prototype → Evaluate → Integrate → Improve**
 
@@ -39,180 +36,158 @@
 # Selected Work
 
 ## 01. 4-Fit MirrorTing
+### AI Workplace Communication · Team CarpeDM
 
-### AI Smart Mirror for Workplace Communication Training
+**업무 대화를 AI 역할극으로 연습하고, 응답·목소리·표정·자세의 4-Fit 관점에서 돌아보는 전시용 스마트미러 프로젝트**
 
-**직장생활에서 처음 마주칠 수 있는 대화 상황을 AI와 미리 경험하고, 자신의 커뮤니케이션을 점검하는 스마트미러 기반 시뮬레이션 시스템**
+`Project Manager` `System Planning` `Hardware Integration`
 
-`Project Manager` `System Planning` `Hardware Lead`
+팀 프로젝트에서 체험 흐름과 시스템 기획, 하드웨어 연결을 중심으로 참여했습니다.
 
-**What I worked on**
+- React/Vite 화면과 FastAPI 기반 대화·분석·리포트 구조
+- Chrome STT, 녹음 후 Whisper 분석, LLM 대화와 음성 응답 연결
+- NFC 방문자 연결과 스마트미러·키오스크 사이의 세션 흐름 설계
 
-- 음성 기반 직장 대화 시나리오와 사용자 체험 흐름 설계
-- STT · LLM · Computer Vision을 연결하는 전체 시스템 구조 설계
-- 표정 · 목소리 · 내용 · 상황을 결합한 **4-Fit 피드백 경험** 기획
-- 65인치 스마트미러, Azure Kinect, NFC, Raspberry Pi 키오스크 등 하드웨어 통합
-- Frontend · Backend · AI · Hardware 간 세션 및 데이터 흐름 정의
-- EXPO 체험 동선, 관리자 대시보드, 프로젝트 웹사이트까지 하나의 서비스 경험으로 연결
+현재 스마트미러 체험은 **한 가지 직장 상황의 3턴 대화**입니다. 화면 미리보기, 실제 AI 실행, 실물 장치 연동을 구분하며 분석 결과는 참고용으로 다룹니다.
 
-**Repositories**
+[Core Repository](https://github.com/DMUCarpeDM/2026CarpeDM_EXPO) ·
+[Project Website](https://sdg331.github.io/CarpeDM_EXPO_Microsite/) ·
+[Microsite Source](https://github.com/sdg331/CarpeDM_EXPO_Microsite) ·
+[Sample Dashboard](https://github.com/sdg331/CarpeDM_EXPO_dashboard)
 
-[EXPO Microsite](https://github.com/sdg331/CarpeDM_EXPO_Microsite) ·
-[ID Printer Kiosk](https://github.com/sdg331/CarpeDM_EXPO_IDPrinter) ·
-[Admin Dashboard](https://github.com/sdg331/CarpeDM_EXPO_dashboard)
+`React` `TypeScript` `FastAPI` `STT / TTS` `LLM` `Computer Vision`
 
-`React` `TypeScript` `FastAPI` `LLM` `STT` `Computer Vision` `NFC` `Raspberry Pi`
+## 02. MirrorTing ID Printer
+### Face · NFC · Thermal Printing
 
----
+**얼굴 촬영과 캐릭터 매칭, NFC 카드 연결, 사원증·체험 리포트 출력으로 이어지는 CarpeDM 체험 키오스크**
 
-## 02. Ginger
+- YuNet/SFace 기반 로컬 얼굴 처리와 8개 캐릭터 매칭
+- FastAPI·SQLite 기반 방문자 세션, NFC 연결, 출력 작업 상태 관리
+- 출력 작업 중복 방지와 결과가 불확실한 작업의 운영자 복구 흐름
 
-### AI Question Coach for Deeper Thinking
+샘플 화면과 실제 장치 실행을 분리했습니다. 소프트웨어 테스트와 별개로 카메라·NFC·감열 프린터의 실물 검증이 필요합니다.
 
-**정답을 바로 제공하기보다, 학습자의 답변을 분석하고 다음 사고 단계로 이어지는 질문을 제공하는 AI 학습 서비스**
+[Repository](https://github.com/sdg331/CarpeDM_EXPO_IDPrinter) ·
+[Implementation & Operations](https://github.com/sdg331/CarpeDM_EXPO_IDPrinter/blob/main/docs/OPERATIONS.md)
 
-- 한국어 서술형 답변을 TF-IDF 특징으로 변환
-- `scikit-learn` 기반 분류 모델 구축
-- 답변 특징을 Level 1–4 형태로 분석
-- 낮은 예측 신뢰도에 대한 fallback 처리
-- 추론 로직과 UI를 분리한 구조 설계
-- pytest · Docker · GitHub Actions 기반 실행 및 검증 환경 구성
+`JavaScript` `FastAPI` `SQLite` `YuNet / SFace` `NFC` `Raspberry Pi`
 
-[Repository](https://github.com/sdg331/ginger-app)
+## 03. 생강 · Ginger
+### Question-based Thinking Coach
 
-`Python` `scikit-learn` `TF-IDF` `Streamlit` `pytest` `Docker` `GitHub Actions`
+**사용자의 답변을 바탕으로 후속 질문을 제안하고, 스스로 고쳐 쓰며 생각을 발전시키도록 돕는 초기 MVP**
 
----
+- TF-IDF·scikit-learn 기반 답변 특징 분석과 낮은 확신도에 대한 fallback
+- 질문을 반영하는 라운드형 사고 훈련과 수정 전후 답변 비교
+- 선택형 LLM 판단·질문 생성 계층, pytest·Docker·GitHub Actions 구성
 
-## 03. Neuro Drive
+모델의 Level은 사람의 사고력을 확정하는 점수가 아닙니다. **템플릿 데이터 내부 성능과 분포 밖 평가를 구분**하며, 실제 학습 효과는 별도의 검증 과제입니다.
 
-### Reinforcement Learning You Can Watch
+[Repository](https://github.com/sdg331/ginger-app) ·
+[Limitations & Evaluation](https://github.com/sdg331/ginger-app/blob/main/reports/limitations_and_adversarial_findings.md)
 
-**AI가 학습하고 실패하고 전략을 바꾸는 과정을 사용자가 직접 관찰할 수 있도록 만든 브라우저 기반 AI 리터러시 프로젝트**
+`Python` `Streamlit` `scikit-learn` `TF-IDF` `LLM` `pytest`
 
-외부 머신러닝 프레임워크 없이 JavaScript로 다음 요소를 직접 구현했습니다.
+## 04. 틈길 · TEUMGIL
+### Market Discovery & Community Workflow · 길이음팀
 
-- Deep Q-Network
-- Neural Network
-- Forward / Backpropagation
-- Experience Replay
-- Target Network
-- Reward-based Learning
+**전통시장 점포·품목 탐색과 장보기, 시민·운영자·상인의 의견 처리 흐름을 연결하는 웹앱 MVP**
 
-또한 Learning Curve, Value Map, Neural Network State, Reward Hacking Experiment를 시각화해 **AI의 학습 과정을 결과가 아닌 과정으로 이해할 수 있도록** 설계했습니다.
+- Next.js·TypeScript와 PostgreSQL 기반 가입·로그인·DB 세션
+- 시장·점포 검색, 계정별 장보기 목록, 의견 작성과 초안 복구
+- 운영자 확인·전달·게시와 상인 답변을 분리한 역할별 접근·감사 기록
 
-[Live Demo](https://sdg331.github.io/neuro-drive/) · [Repository](https://github.com/sdg331/neuro-drive)
+현재는 **가상 자료로 체험하는 MVP**입니다. 실제 지도·AI·메일은 미연동이며, 앱 내부 의견 접수는 공식 민원 접수와 다릅니다.
 
-`JavaScript` `HTML` `CSS` `Canvas` `DQN` `PWA`
+[Repository](https://github.com/sdg331/Teumgil) ·
+[Architecture](https://github.com/sdg331/Teumgil/blob/main/docs/ARCHITECTURE.md) ·
+[Verification Scope](https://github.com/sdg331/Teumgil/blob/main/docs/MVP_VERIFICATION.md)
 
----
-
-## 04. ReliefCheck
-
-### Offline Relief Distribution Management System
-
-**네트워크가 불안정한 재난 현장에서도 중복 지급을 방지하고 지급 기록을 관리할 수 있도록 설계한 Raspberry Pi 기반 시스템**
-
-- 듀얼 NFC 입력 및 지급 정책 판정
-- SQLite 기반 재고 및 감사 원장 관리
-- 감열 프린터 · 카메라 · NFC 장치 통합
-- 거래 상태와 출력 상태를 분리해 프린터 오류가 중복 거래로 이어지지 않도록 설계
-- 하드웨어별 Adapter 구조와 단위 테스트 적용
-
-[Repository](https://github.com/sdg331/CarpeDM_EswContest)
-
-`Python` `SQLite` `Raspberry Pi` `NFC` `JavaScript` `pytest`
+`Next.js` `TypeScript` `PostgreSQL` `PGlite` `Playwright`
 
 ## 05. 근거노트
-
 ### Evidence-linked Korean Document Q&A
 
-**채용 가이드에서 필요한 내용을 질문하고, 답변의 출처·쪽수와 발췌 요약을 직접 확인하는 한국어 문서 질의응답 데모**
+**문서에 질문하고, 답변의 근거·쪽수·발췌 내용을 직접 확인하는 한국어 문서 질의응답 데모**
 
-- 한국어 문서 검색과 선택형 로컬 Ollama 답변 생성
-- 근거가 부족한 질문은 답변을 보류하고, 찾은 내용은 쪽수·공식 원문 링크와 함께 표시
-- 읽기 전용 시연 모드와 재현 가능한 작은 검색 평가 세트 구성
+- React·FastAPI·SQLite 기반 문서 업로드와 검색
+- 근거가 부족한 질문의 답변 보류, 선택형 Ollama 의미 검색·AI 답변
+- 읽기 전용 공개 시연 모드와 재현 가능한 작은 검색 평가 세트
 
-**시연 자료 범위:** 2024년 공감채용 핸드북의 인쇄 53·64·70쪽을 검수해 요약했습니다. 전체 PDF 검색이나 현행 법률 안내는 아닙니다.
+샘플 문서 기반 데모이며, 인용 표시만으로 답변의 사실성을 보증하지 않습니다.
 
 [Repository](https://github.com/sdg331/evidence-note)
 
 `React` `TypeScript` `FastAPI` `SQLite` `Ollama` `pytest`
 
+## 06. ReliefCheck
+### Offline-first Relief Distribution · Team Project
+
+**재난 대피소에서 지급 기준과 거래 기록을 확인하는 Raspberry Pi 기반 오프라인 우선 구호물자 지급 단말**
+
+- 가구 카드·물품 태그를 구분하는 듀얼 NFC 흐름과 정책 엔진
+- SQLite 원장에 거래를 먼저 기록하고 출력 상태를 별도로 관리
+- 장치 어댑터, 오류·중복 지급 방지 테스트와 소프트웨어 검증 리포트
+
+정책·거래 기록 검증과 실제 장치의 반복 인식·출력 성능 측정을 구분합니다.
+
+[Repository](https://github.com/sdg331/CarpeDM_EswContest)
+
+`Python` `SQLite` `JavaScript` `Raspberry Pi` `NFC` `pytest`
+
 ---
+
 ### More Experiments
 
-**[헛똑똑이 랩](https://github.com/sdg331/heotlab)**  
-Hallucination과 Reward Hacking을 짧은 실험으로 경험하는 AI 리터러시 웹 애플리케이션 · [Live Demo](https://sdg331.github.io/heotlab/)
+**[Neuro Drive](https://github.com/sdg331/neuro-drive)** · [Live Demo](https://sdg331.github.io/neuro-drive/)  
+순수 JavaScript 기반 DQN 레이싱 실험실. 학습 곡선·가치 지도·신경망 상태와 보상 설계 실험을 통해 강화학습 과정을 관찰합니다.
+
+**[헛똑똑이 랩](https://github.com/sdg331/heotlab)** · [Live Demo](https://sdg331.github.io/heotlab/)  
+환각과 보상 해킹을 체험하는 AI 리터러시 웹앱. 실패 사례는 사전 작성된 시뮬레이션이며 라이브 LLM 호출은 사용하지 않습니다.
 
 **[AI Indie Game Hackathon](https://github.com/sdg331/AI_INDIGAME_HACKATHON)**  
-Unity 기반 AI 인디게임 해커톤 프로젝트
+Unity·C# 기반 팀 게임 프로젝트. 플레이어 액션과 보스 패턴을 구현합니다.
 
 ---
 
 # Toolkit
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=python,java,js,ts,react,fastapi,sqlite,docker,git,github,raspberrypi,figma&perline=12" alt="Python, Java, JavaScript, TypeScript, React, FastAPI, SQLite, Docker, Git, GitHub, Raspberry Pi, Figma" />
+  <img src="https://skillicons.dev/icons?i=python,js,ts,react,nextjs,fastapi,postgres,sqlite,docker,git,raspberrypi,figma&perline=12" alt="Python, JavaScript, TypeScript, React, Next.js, FastAPI, PostgreSQL, SQLite, Docker, Git, Raspberry Pi, Figma" />
 </div>
 
 <br/>
 
 | Area | Working With |
 | --- | --- |
-| **AI · ML** | scikit-learn · TF-IDF · LLM Applications · STT · Computer Vision |
-| **Data** | Pandas · NumPy · SQLite |
-| **Frontend** | React · TypeScript · JavaScript · Vite · Streamlit |
-| **Backend** | Python · FastAPI · REST API |
-| **Embedded** | Raspberry Pi · NFC · Camera · Sensors · Touch Display |
-| **Engineering** | Git · GitHub Actions · pytest · Docker |
-| **Product** | System Planning · Rapid Prototyping · UI/UX · Hardware Integration |
+| **AI · ML** | scikit-learn · TF-IDF · LLM Applications · STT / TTS · Computer Vision |
+| **Frontend** | React · Next.js · TypeScript · JavaScript · Vite · Streamlit |
+| **Backend · Data** | Python · FastAPI · REST API · SQLite · PostgreSQL |
+| **Embedded** | Raspberry Pi · NFC · Camera · Thermal Printer · Touch Display |
+| **Verification** | pytest · Playwright · GitHub Actions · Docker |
+| **Product** | System Planning · UI/UX · Figma · Hardware Integration |
 
 ---
 
 # How I Build
 
-```text
-Define the problem
-      ↓
-Build the smallest working prototype
-      ↓
-Measure what actually works
-      ↓
-Connect AI with the product experience
-      ↓
-Test in the real environment
-      ↓
-Improve
-```
-
-저는 모델 정확도만 높이는 것보다 **사용자가 실제로 사용할 수 있는 전체 시스템을 완성하는 것**을 중요하게 생각합니다.
-
-그래서 새로운 기술을 배울 때도 가능한 한 작은 실험으로 직접 구현하고, 결과를 확인한 뒤 다음 단계로 확장합니다.
-
----
+- **작게 시작합니다.** 문제와 사용 흐름을 정리하고 최소한의 동작부터 연결합니다.
+- **경계를 확인합니다.** 화면·API·데이터·장치 간 계약과 실패 상태를 명시합니다.
+- **근거를 남깁니다.** 테스트, 평가 자료, 실행 방법과 남은 한계를 함께 기록합니다.
+- **검증을 구분합니다.** 샘플 시연, 소프트웨어 테스트, 실제 사용자·장치 검증을 같은 성과로 표현하지 않습니다.
 
 # Currently
 
-**Building**
-- 4-Fit MirrorTing — AI 기반 스마트미러 직장생활 시뮬레이션 시스템
-- AI · Web · Embedded가 연결되는 실제 체험형 프로덕트
-- 근거노트 — 출처와 쪽수를 확인하는 한국어 문서 질의응답 데모
+**Building & Improving**
+- MirrorTing과 체험 키오스크의 대화·세션·리포트 연결
+- 생강의 질문 기반 사고 훈련과 평가 방법
+- 틈길의 역할별 서비스 흐름과 재현 가능한 MVP 검증
 
-**Deepening**
-- Machine Learning fundamentals
-- Deep Learning
-- Natural Language Processing
-- Computer Vision
-- LLM application architecture
-- Model evaluation
-- AI deployment & MLOps
-
-**Exploring**
-- AI × Product Design
-- AI × Education
-- AI × Physical Computing
-- AI를 활용한 빠른 실험과 서비스 검증
+**Learning**
+- Machine Learning · Deep Learning · NLP · Computer Vision
+- LLM application architecture · Model evaluation · AI deployment
+- AI × Product Design · Education · Physical Computing
 
 ---
 
