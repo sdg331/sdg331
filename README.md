@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/profile-hero-ai-product.png" width="100%" alt="Jiyeon Kim · AI Developer & Product Planner" />
+<img src="./assets/profile-hero-ai-product.jpg" width="100%" alt="Jiyeon Kim · AI Developer & Product Planner" />
 
 <br />
 
